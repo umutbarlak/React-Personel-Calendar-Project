@@ -4,27 +4,27 @@ Bu proje, personel vardiyalarının takip edilebilmesi, düzenlenebilmesi ve gö
 
 <h2>🛠️ Kullanılan Teknolojiler</h2>
 
-⚛️ React 19 – Modern, bileşen tabanlı kullanıcı arayüzü geliştirme
+- ⚛️ React 19 – Modern, bileşen tabanlı kullanıcı arayüzü geliştirme
 
-🧠 Redux Toolkit – Global durum yönetimi için sadeleştirilmiş Redux araçları
+- 🧠 Redux Toolkit – Global durum yönetimi için sadeleştirilmiş Redux araçları
 
-🚦 Redux-Saga – Asenkron veri işleme ve yan etkileri yönetme
+- 🚦 Redux-Saga – Asenkron veri işleme ve yan etkileri yönetme
 
-🗓️ FullCalendar – Takvim görünümü ve etkileşimli planlama bileşenleri (günlük, haftalık, liste)
+- 🗓️ FullCalendar – Takvim görünümü ve etkileşimli planlama bileşenleri (günlük, haftalık, liste)
 
-⏰ Day.js – Hafif ve hızlı tarih/saat işleme kütüphanesi
+- ⏰ Day.js – Hafif ve hızlı tarih/saat işleme kütüphanesi
 
-🌐 Axios – HTTP istekleri ile API iletişimi
+- 🌐 Axios – HTTP istekleri ile API iletişimi
 
-🧭 React Redux – React ile Redux arasındaki bağlantıyı sağlayan bağlayıcı
+- 🧭 React Redux – React ile Redux arasındaki bağlantıyı sağlayan bağlayıcı
 
-🧾 Redux First History – Tarayıcı geçmişini Redux store ile senkronize etme
+- 🧾 Redux First History – Tarayıcı geçmişini Redux store ile senkronize etme
 
-⚡ Vite – Hızlı geliştirme sunucusu ve üretim için build aracı
+- ⚡ Vite – Hızlı geliştirme sunucusu ve üretim için build aracı
 
-🎨 Sass Embedded – Gelişmiş stil yazımı için Sass desteği
+- 🎨 Sass Embedded – Gelişmiş stil yazımı için Sass desteği
 
-🧹 ESLint & TypeScript – Kod kalitesini artıran statik analiz ve tip kontrolü
+- 🧹 ESLint & TypeScript – Kod kalitesini artıran statik analiz ve tip kontrolü
 
 <h2>📌 Özellikler</h2>
 
