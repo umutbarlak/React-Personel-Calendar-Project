@@ -1,9 +1,9 @@
-import Cookies from '../utils/cookies';
+import Cookies from "../utils/cookies";
 
 class Storage {
   static isLocalStorageSupported(): boolean {
     const storage = window.localStorage;
-    const testKey = 'testLocalStorageFunctionality';
+    const testKey = "testLocalStorageFunctionality";
     let supported = true;
 
     try {
@@ -18,10 +18,11 @@ class Storage {
 
   static get(key: string): any {
     let value: string;
-    if (Storage.isLocalStorageSupported()) value = window.localStorage.getItem(key) ?? '';
+    if (Storage.isLocalStorageSupported())
+      value = window.localStorage.getItem(key) ?? "";
     else value = Cookies.get(key);
 
-    if (value && value != 'undefined') value = JSON.parse(value);
+    if (value && value != "undefined") value = JSON.parse(value);
 
     return value;
   }

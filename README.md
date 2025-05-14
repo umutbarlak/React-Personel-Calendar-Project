@@ -55,4 +55,4 @@ npm run dev
 
 **Her geliştirme adımında kodun okunabilirliğine, performansına ve bileşenlerin yeniden kullanılabilirliğine dikkat edilmesi beklenmektedir.Proje ile ilgili sorularınızı info@smart-maple.com adresine iletebilirsiniz.**
 
-✨ Teşekkürler!
+✨ Teşekkürler!# React-Personel-Calendar-Project

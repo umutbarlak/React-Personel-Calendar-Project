@@ -3,16 +3,20 @@ import AuthSession from "../../utils/session";
 import "../profileCalendar.scss";
 
 type ProfileCardProps = {
-    profile: UserInstance;
+  profile: UserInstance;
 };
 
 const ProfileCard = ({ profile }: ProfileCardProps) => {
   return (
     <div className="profile-section">
       <div className="profile-info">
-        <h2>Welcome, {profile?.name}</h2>
-        <p>{profile?.email ?? AuthSession.getEmail()}</p>
-        <p>{/*profile?.role ??*/ AuthSession.getRoles()}</p>
+        <div>
+          <h2>Welcome, {profile?.name}</h2>
+          <p>{profile?.email ?? AuthSession.getEmail()}</p>
+        </div>
+        <p className="profile-section-role">
+          {profile?.role?.name ?? AuthSession.getRoles()}
+        </p>
       </div>
     </div>
   );

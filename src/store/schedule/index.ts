@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type { Action } from 'redux-actions';
+import type { Action } from "redux-actions";
 
-import { handleActions } from 'redux-actions';
+import { handleActions } from "redux-actions";
 
-import types from './types';
+import types from "./types";
 
-import type { ErrorBE } from '../../utils/types';
-import type { ScheduleInstance } from '../../models/schedule';
+import type { ErrorBE } from "../../utils/types";
+import type { ScheduleInstance } from "../../models/schedule";
 
 export interface ScheduleState {
   errors: ErrorBE;
