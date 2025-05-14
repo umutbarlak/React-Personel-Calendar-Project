@@ -1,58 +1,51 @@
-# React Project - 2025
+<h1>React-Personel-Calendar-Project</h1>
 
-Merhaba, bu projede sizden belirtilen hataların giderilmesi ve yeni özelliklerin uygulamaya eklenmesi beklenmektedir.
+Bu proje, personel vardiyalarının takip edilebilmesi, düzenlenebilmesi ve görselleştirilebilmesi amacıyla geliştirilmiş bir React uygulamasıdır. FullCalendar, Redux Toolkit ve drag & drop destekli harita/takvim görünümü ile birlikte, kullanıcı dostu bir vardiya yönetim sistemidir.
 
-## 📦 Kurulum ve Başlatma Adımları
+<h2>🛠️ Kullanılan Teknolojiler</h2>
 
-Projeyi çalıştırmak için aşağıdaki adımları takip edin:
+⚛️ React 19 – Modern, bileşen tabanlı kullanıcı arayüzü geliştirme
 
-```sh
-npm install --legacy-peer-deps
-npm run dev
-```
+🧠 Redux Toolkit – Global durum yönetimi için sadeleştirilmiş Redux araçları
 
-## 🐞 Hata Düzeltmeleri ve 📌 İstekler
+🚦 Redux-Saga – Asenkron veri işleme ve yan etkileri yönetme
 
-**1. ProfileCard Bileşeni – Rol Gösterimi** (15P)
-- Sorun: Kullanıcı profili henüz yüklenmemişken, ProfileCard bileşeninde role alanı gösterilemiyor ve uygulama hata veriyor.
+🗓️ FullCalendar – Takvim görünümü ve etkileşimli planlama bileşenleri (günlük, haftalık, liste)
 
-- Beklenen Davranış: Eğer state üzerinden profil datası henüz gelmemişse, localStorage içindeki role bilgisi kullanılmalı ve düzgün şekilde ekranda gösterilmelidir. Uygulama bu durumda hata vermemelidir.
+⏰ Day.js – Hafif ve hızlı tarih/saat işleme kütüphanesi
 
-**2. Takvim Başlangıç Tarihi ve Event Detayı** (15P)
-- Sorun: Takvim bileşeni (calendar) her zaman mevcut ay ile başlıyor.
+🌐 Axios – HTTP istekleri ile API iletişimi
 
-- Beklenen Davranış: Takvim, schedule verisindeki ilk etkinliğin (event) tarihine göre başlamalıdır. Yani ilk planlı etkinliğin olduğu aydan görünüm başlamalı.
+🧭 React Redux – React ile Redux arasındaki bağlantıyı sağlayan bağlayıcı
 
-- Ek olarak, takvimdeki bir etkinliğe tıklandığında bir pop-up açılarak, ilgili etkinliğe ait personel adı, vardiya adı, tarih, başlangıç ve bitiş saatleri gibi tüm bilgilerin görüntülenmesi beklenmektedir.
+🧾 Redux First History – Tarayıcı geçmişini Redux store ile senkronize etme
 
-**3. Personel Bazlı Etkinlik Filtreleme** (10P)
-- Sorun: Takvimde tüm personellerin (staff) etkinlikleri gösteriliyor.
+⚡ Vite – Hızlı geliştirme sunucusu ve üretim için build aracı
 
-- Beklenen Davranış: Sadece seçili olan personelin etkinlikleri takvimde görünmelidir.
+🎨 Sass Embedded – Gelişmiş stil yazımı için Sass desteği
 
-**4. Pair Günlerinin Altını Çizme** (25P)
-- Sorun: highlightedPair sınıfı tüm günlere uygulandığı için takvimdeki bütün günlerin altı çizili görünmekte.
+🧹 ESLint & TypeScript – Kod kalitesini artıran statik analiz ve tip kontrolü
 
-- Beklenen Davranış: Her personelin sahip olduğu pair listesi, o personelin başka bir personelle birlikte çalıştığı tarih aralıklarını belirtmektedir. Takvimde, seçili personelin bu tarih aralıklarına denk gelen günleri (pair günleri), highlightedPair sınıfı ile altı çizili olarak gösterilmelidir. Diğer günler normal şekilde görünmelidir.
+<h2>📌 Özellikler</h2>
 
-- Ek olarak beklenen davranış, her pair’in takvimde kendi rengiyle temsil edilmesidir. Yani, takvimde tıklanabilir durumda olan her personel farklı bir renkte gösterilmelidir. Örneğin, Tuba seçili personel ise ve 14. gün Esra ile bir pair oluşturuyorsa, Esra'nın rengi kırmızıysa, ayın 14'ü kırmızı alt çizgiyle vurgulanmalıdır.
+- 👥 Personellerin vardiyalara göre listelenmesi
 
-**5. Takvimde Sürükle-Bırak Özelliğinin Kontrol Edilmesi** (5P)
-- Sorun: Takvim üzerindeki etkinlikler (events) kullanıcı tarafından sürüklenip taşınabiliyor.
+- 🕒 Vardiya başlangıç ve bitiş saatlerinin görselleştirilmesi
 
-- Beklenen Davranış (Opsiyon 1): Etkinlikler sürüklenemez olmalı, yani "drag and drop" özelliği devre dışı bırakılmalıdır. (5P)
+- 🗓️ FullCalendar ile takvim görünümü (günlük, haftalık, liste vb.)
 
-- Beklenen Davranış (Opsiyon 2): Etkinlikler sürüklenebilir şekilde kalmalıdır. Ancak, takvimdeki bir etkinlik sürüklenerek günü değiştirildiğinde, bu değişiklik state/redux verisine yansıtılmalıdır. Bu işlemlerin, ilgili bileşen içinde ve projenin store klasörü altında gerçekleştirilmesi gerekmektedir. (25P)
+- 📍 Harita/takvim üzerinde kaydırarak (drag & drop) vardiya değişikliği
 
-**6. Tasarım Güncellemeleri** (25P + Ekstra)
-- Beklenti: Mevcut bileşenlerin görsel ve yapısal tasarımları elinizdeki verilere uygun şekilde iyileştirilmeli ve modern, kullanıcı dostu bir arayüz haline getirilmelidir.
+- 🔍 Kişi bazlı filtreleme ile çalışma günlerinin listelenmesi
 
-#
----
-#
- 
-📝 **Öneri**: Kullanıcı deneyimini artıracak şekilde yeniden düzenlemeler yapabilir, component hiyerarşisini sadeleştirebilir ve UI/UX anlamında profesyonel dokunuşlar ekleyebilirsiniz.
+- 🧑‍🤝‍🧑 PairList (eşleşen vardiyalı kişiler) renk kodlaması ile gösterim
 
-**Her geliştirme adımında kodun okunabilirliğine, performansına ve bileşenlerin yeniden kullanılabilirliğine dikkat edilmesi beklenmektedir.Proje ile ilgili sorularınızı info@smart-maple.com adresine iletebilirsiniz.**
+- 📋 Şifte tıklanıldığında detaylı bilgi popup/modal:
 
-✨ Teşekkürler!# React-Personel-Calendar-Project
+- Çalışan ismi
+
+- Başlangıç saati
+
+- Bitiş saati
+
+- Pair (eşleştiği kişi)
