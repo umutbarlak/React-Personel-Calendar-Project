@@ -181,15 +181,11 @@ const CalendarContainer = ({ schedule, auth }: CalendarContainerProps) => {
 
             const formattedDate = dayjs(date).format("DD-MM-YYYY");
 
-            console.log(highlightedDates);
-
             const pairMatch = highlightedDates.find(
               (d) => d.date === formattedDate
             );
 
             const isHighlighted = !!pairMatch;
-
-            console.log(pairMatch);
 
             return (
               <DayCellItem

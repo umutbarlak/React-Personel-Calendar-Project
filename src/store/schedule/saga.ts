@@ -37,11 +37,7 @@ function* asyncUpdateAssignmentDate({
   try {
     const response = JSON.parse(JSON.stringify(scheduleReponse));
 
-    console.log(id);
-
     const assignment = response.data.assignments.find((a: any) => a.id === id);
-
-    console.log(assignment);
 
     if (assignment) {
       assignment.shiftStart = newDate;
